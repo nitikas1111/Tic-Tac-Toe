@@ -1,0 +1,52 @@
+body{
+    text-align: center;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
+    grid-template-rows: repeat(3, 120px);
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cell{
+    background-color: rgb(241, 237, 231);
+    border: 1px solid black;
+    color: grey;
+    font-size: 2em;
+    cursor: pointer;
+    text-align: center;
+}
+
+#reset{
+    padding: 8px;
+    margin: 25px;
+    font-size: 20px;
+    margin-right: 280px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.cell.taken {
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 780px) {  
+    .box {
+        grid-template-columns: repeat(3, 80px);
+        grid-template-rows: repeat(3, 90px);
+        margin-top: 25px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    #reset{
+        padding: 10px;
+        margin: 20px;
+    }
+}
+
+
